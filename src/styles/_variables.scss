@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap');
+$principal-font: 'Roboto';
+$secondary-font: sans-serif;
+
+@mixin font-family {
+    font-family: $principal-font, $secondary-font;
+}
+
+//main cards color
+$red: #FF3068;
+$white: #fff;
+
+//background
+$background-color: #F8F8FA;
+
+//gradient
+$light-blue: #CADEE5;
+$light-violet: #E1D5E5;
+
+//other (?
+$light-cian: #E8F0F5;
+
+//main text color
+$dark-gray: #283238;
+$light-gray: #8394AA;
+
+//border-radius
+$border-radius: 16px

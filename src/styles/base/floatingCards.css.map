@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,+FAAI",
+    "sources": [
+        "floatingCards.scss",
+        "../_variables.scss"
+    ],
+    "names": [],
+    "file": "floatingCards.css"
+}

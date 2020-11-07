@@ -1,0 +1,60 @@
+@import '../variables';
+
+.destacado-mobile{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+
+$length: 370px;
+
+.destacado-mobile__circle{
+    height: $length;
+    width: $length;
+    border-radius: $length;
+    background: linear-gradient(45deg, #CADEE5, #E1D5E5);
+    filter: saturate(3);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacado-mobile__floating{
+    width: $length;
+    height: 0px;
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(-130px) translateX(-475px);
+    };
+    100%{
+
+        transform: translateY(-80px) translateX(-465px);
+
+    }
+}
+
+@keyframes floating2{
+    
+    0%{
+
+        transform: translateY(-60px) translateX(-45px);
+
+    };
+    100%{
+        transform: translateY(-120px) translateX(-35px);
+    };
+}
+
+.destacado-mobile__floating-item--1{
+    animation: floating 6s infinite alternate-reverse;
+}
+
+.destacado-mobile__floating-item--2{
+    animation: floating2 4s infinite alternate-reverse; 
+}

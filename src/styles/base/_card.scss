@@ -1,0 +1,127 @@
+@import '../variables';
+$width: 350px;
+
+@mixin text{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    border-radius: $border-radius;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: $width;
+    height: 300px;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
+}
+
+.card__header{
+    width: $width;
+    height: 110px;
+    background-color: $light-cian;
+    border-radius:  $border-radius $border-radius 0 0;
+    display: grid;
+    grid-template-columns: 100px  250px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card__bank-container{
+    height: 55px;
+    width: 55px;
+    border-radius: $border-radius - 6px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__bank-img{
+    height: 25px;
+    width: 25px;
+}
+
+.card__user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 0 10px;
+    width: 250px;
+}
+
+@mixin text-mxn($color, $size){
+    @include text();
+    @include font-family;
+    font-weight: 400;
+    color: $color;
+    font-size: $size;
+}
+
+.card__user-name{
+    @include text-mxn($dark-gray, 15px)
+}
+
+.card__user-bank{
+    @include text-mxn($light-gray, 12px)
+}
+
+.card__footer{
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__money{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 36px;
+}
+
+@keyframes prompt{
+    0%{
+        opacity: 0.8;
+    };
+
+    100%{
+        opacity: 0;
+    };
+}
+
+
+.card__money-h2{
+    @include text-mxn($dark-gray, 36px);
+}
+
+.card__money-span{
+    transform: translateY(4px);
+    @include text-mxn($light-gray, 18px);
+    margin: 0 5px 0 0;
+}
+
+.card__money-prompt{
+    height: 36px;
+    width: 1px;
+    background-color: $red;
+    opacity: 0.5;
+    transform: translateY(5px);
+    margin: 0 0 0 5px;
+    animation: prompt 1s alternate infinite;
+    border-radius: 1px;
+}
+
+.card__money-underline{
+    width: 250px;
+    height: 1px;
+    background-color: $red;
+    margin-top: 15px;
+    border-radius: 1px;
+}

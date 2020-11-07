@@ -1,0 +1,35 @@
+@import '../variables';
+
+@mixin  floating ($color) {
+    border-radius: $border-radius;
+    background-color: $color;
+}
+
+$shadow-red: #FF306850;
+
+.floating-card--red{
+    @include floating($red);
+    -webkit-box-shadow: 0px 0px 31px 0px $shadow-red;
+    -moz-box-shadow: 0px 0px 31px 0px $shadow-red;
+    box-shadow: 0px 0px 31px 0px $shadow-red;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.floating-card__img{
+    width: 44px;
+    height: 44px;
+}
+
+.floating-card--white{
+    @include floating($white);
+    height: 60px;
+    width: 200px;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
+}
