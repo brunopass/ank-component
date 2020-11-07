@@ -6,6 +6,14 @@ $secondary-font: sans-serif;
     font-family: $principal-font, $secondary-font;
 }
 
+@mixin text-mxn($color, $size){
+    @include text();
+    @include font-family;
+    font-weight: 400;
+    color: $color;
+    font-size: $size;
+}
+
 //main cards color
 $red: #FF3068;
 $white: #fff;

@@ -6,3 +6,8 @@ body{
 @import './base/card';
 @import './components/destacadoMobile';
 @import './base/floatingCards';
+@import './variables';
+
+body{
+    background-color: $background-color;
+}

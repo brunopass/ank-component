@@ -59,11 +59,11 @@ const DestacadoMobile = () => {
 
             <div>
             <div className="destacado-mobile__white-item--1">
-                        <FloatingCard img={LAicon}/>
+                        <FloatingCard img={LAicon} title="Lucas Acosta" subTitle="Sudbank +2"/>
                     </div>
 
                     <div className="destacado-mobile__white-item--2">
-                        <FloatingCard img={FHicon}/>
+                        <FloatingCard img={FHicon} title="Franco Hernández" subTitle="Ank"/>
                     </div>
             </div>
 

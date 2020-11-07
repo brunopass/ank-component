@@ -55,13 +55,7 @@ $width: 350px;
     width: 250px;
 }
 
-@mixin text-mxn($color, $size){
-    @include text();
-    @include font-family;
-    font-weight: 400;
-    color: $color;
-    font-size: $size;
-}
+
 
 .card__user-name{
     @include text-mxn($dark-gray, 15px)
