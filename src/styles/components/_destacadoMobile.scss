@@ -1,12 +1,14 @@
 @import '../variables';
 
 .destacado-mobile{
-    height: max-content;
-    width: max-content;
+    height:370px;
+    width: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 200px;
+    padding: 0;
 }
 
 $length: 370px;
@@ -30,11 +32,13 @@ $length: 370px;
 
 @keyframes floating{
     0%{
-        transform: translateY(-130px) translateX(-475px);
+        transform: translateY(-290px) translateX(-80px) scale(1.08);
+
     };
     100%{
 
-        transform: translateY(-80px) translateX(-465px);
+        transform: translateY(-200px) translateX(-45px) scale(1.0);
+
 
     }
 }
@@ -43,43 +47,43 @@ $length: 370px;
     
     0%{
 
-        transform: translateY(-60px) translateX(-45px);
+        transform: translateY(-340px) translateX(390px) scale(1.0);
 
     };
     100%{
-        transform: translateY(-120px) translateX(-35px);
+        transform: translateY(-250px) translateX(355px) scale(1.08);
     };
 }
 
 @keyframes cards1{
     
     0%{
-        transform: translateY(20px) translateX(-465px);
+        transform: translateY(-180px) translateX(-105px) scale(1.04);
     };
     100%{
 
-        transform: translateY(-60px) translateX(-475px);
+        transform: translateY(-250px) translateX(-125px) scale(1.0);
 
     };
 }
 
 @keyframes cards2{
     0%{
-        transform: translateY(-460px) translateX(-165px);
+        transform: translateY(-630px) translateX(240px) scale(1.0);
     };
     100%{
-        transform: translateY(-520px) translateX(-155px);
+        transform: translateY(-700px) translateX(260px) scale(1.04);
     };
 }
 
 
 
 .destacado-mobile__floating-item--1{
-    animation: floating 5.5s infinite alternate-reverse;
+    animation: floating 7s infinite alternate;
 }
 
 .destacado-mobile__floating-item--2{
-    animation: floating2 5s infinite alternate-reverse; 
+    animation: floating2 8s infinite alternate; 
 }
 
 .destacado-mobile__cards{
@@ -88,9 +92,9 @@ $length: 370px;
 }
 
 .destacado-mobile__cards-item--1{
-    animation: cards1 4s infinite alternate-reverse;
+    animation: cards1 8s infinite alternate;
 }
 
 .destacado-mobile__cards-item--2{
-    animation: cards2 3s infinite alternate-reverse;
+    animation: cards2 9s infinite alternate;
 }
