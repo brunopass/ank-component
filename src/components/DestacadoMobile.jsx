@@ -67,7 +67,7 @@ const DestacadoMobile = () => {
         <div className="destacado-mobile">
             <div className="destacado-mobile__circle">
 
-                <Card name="Jualiana Varela" bank="Banco del Plata, Caja de ahorro" money={money}/>
+                <Card name="Juliana Varela" bank="Banco del Plata, Caja de ahorro" money={money}/>
                 
             </div>
 

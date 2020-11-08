@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -332,8 +333,8 @@ body {
 }
 
 .destacado-mobile__floating-item--2 {
-  -webkit-animation: floating2 8s infinite alternate;
-          animation: floating2 8s infinite alternate;
+  -webkit-animation: floating2 6.5s infinite alternate;
+          animation: floating2 6.5s infinite alternate;
 }
 
 .destacado-mobile__cards {
@@ -342,13 +343,13 @@ body {
 }
 
 .destacado-mobile__cards-item--1 {
-  -webkit-animation: cards1 8s infinite alternate;
-          animation: cards1 8s infinite alternate;
+  -webkit-animation: cards1 5s infinite alternate;
+          animation: cards1 5s infinite alternate;
 }
 
 .destacado-mobile__cards-item--2 {
-  -webkit-animation: cards2 9s infinite alternate;
-          animation: cards2 9s infinite alternate;
+  -webkit-animation: cards2 6s infinite alternate;
+          animation: cards2 6s infinite alternate;
 }
 
 .floating-card--red {
@@ -431,6 +432,50 @@ body {
   color: #8394AA;
   font-size: 12px;
   font-weight: 400;
+}
+
+.landing {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing__text {
+  text-align: center;
+  width: 600px;
+  margin-top: 100px;
+}
+
+.landing__text--h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #283238;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.landing__text--p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #8394AA;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 body {
