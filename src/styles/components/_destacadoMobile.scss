@@ -51,10 +51,46 @@ $length: 370px;
     };
 }
 
+@keyframes cards1{
+    
+    0%{
+        transform: translateY(20px) translateX(-465px);
+    };
+    100%{
+
+        transform: translateY(-60px) translateX(-475px);
+
+    };
+}
+
+@keyframes cards2{
+    0%{
+        transform: translateY(-460px) translateX(-165px);
+    };
+    100%{
+        transform: translateY(-520px) translateX(-155px);
+    };
+}
+
+
+
 .destacado-mobile__floating-item--1{
-    animation: floating 6s infinite alternate-reverse;
+    animation: floating 5.5s infinite alternate-reverse;
 }
 
 .destacado-mobile__floating-item--2{
-    animation: floating2 4s infinite alternate-reverse; 
+    animation: floating2 5s infinite alternate-reverse; 
+}
+
+.destacado-mobile__cards{
+    width: $length;
+    height: 0px;
+}
+
+.destacado-mobile__cards-item--1{
+    animation: cards1 4s infinite alternate-reverse;
+}
+
+.destacado-mobile__cards-item--2{
+    animation: cards2 3s infinite alternate-reverse;
 }

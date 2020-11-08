@@ -33,12 +33,12 @@ $shadow-red: #FF306850;
 .floating-card--white{
     @include floating($white);
     height: 80px;
-    width: 350px;
-    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
-    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.05);
+    width: 290px;
+    -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.10);
     display: grid;
-    grid-template-columns: 90px 250px;
+    grid-template-columns: 90px 200px;
     justify-items: center;
     align-items: center;
 }
@@ -46,11 +46,19 @@ $shadow-red: #FF306850;
 .floating-card--white__container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 200px;
 }
 
 .floating-card--white__container-h3{
     @include text();
-    @include text-mxn();
+    @include text-mxn($dark-gray, 15px);
+    font-weight: 400;
+}
+
+.floating-card--white__container-span{
+    @include text();
+    @include text-mxn($light-gray, 12px);
+    font-weight: 400;
 }
